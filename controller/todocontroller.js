@@ -57,8 +57,6 @@ exports.getalltodo = async (req, res) => {
 
     try {
         let all_todo = await Todo.find()
-        // console.log(all_todo[0].user_name)
-        // let user = 
         return res.status(200).send({
             success,
             data: all_todo
